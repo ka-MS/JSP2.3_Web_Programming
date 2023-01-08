@@ -26,7 +26,8 @@ String memberID = request.getParameter("memberID");
 	int updateCount = 0;
 
 	try {
-		String jdbcDriver = "oracle.jdbc.driver.OracleDriver";
+		// String jdbcDriver = "oracle.jdbc.driver.OracleDriver";
+		String jdbcDriver = "jdbc:mysql://localhost:3306/chapter14?useUnicode=true&characterEncoding=utf8";
 		String user = "JSPEXAM";
 		String password = "1234";
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -36,7 +37,7 @@ String memberID = request.getParameter("memberID");
 		Class.forName(jdbcDriver);
 
 		// 2. 데이터페이스 커넥션 생성
-		conn = DriverManager.getConnection(url, user, password);
+		conn = DriverManager.getConnection(jdbcDriver, user, password);
 
 		// 3. Statement 생성
 		stmt = conn.createStatement();

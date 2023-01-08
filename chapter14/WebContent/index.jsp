@@ -8,6 +8,7 @@
 </head>
 <body>
 <a href="/viewMemberList.jsp">Member 테이블의 내용</a> <br>
+<a href="/viewMemberList2.jsp">MySql Member 테이블의 내용</a> <br>
 <a href="/update/updateForm.jsp">이름 변경</a> <br>
 <form action="/viewMember.jsp" method="get">
 아이디 회원정보 : <input type="text" name="memberID"><input type="submit" value="검색">
@@ -15,7 +16,7 @@
 <form action="/viewMemberHistory.jsp" method="get">
 아이디 히스토리 : <input type="text" name="memberID"><input type="submit" value="검색">
 </form>
-<a href="/insert/insertForm.jsp">데이터 삽입</a>
+<a href="/insert/insertForm.jsp">데이터 삽입ss</a>
 
 </body>
 </html>
